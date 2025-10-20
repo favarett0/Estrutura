@@ -7,26 +7,93 @@ body {
 header { 
     background: black;
     color:white;
-    padding: 10px 0;
+    padding: 5px 5px;  
+    display: flex;
+    justify-content: space-between; /* A direita*/
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+      }
+h1{
+    margin: 10;
     text-align: center;
 }
+   h1:hover {
+        color: #217224; /* Cor do link ao passar o mouse */
+    }
 
+    .logo{
+        row-gap: 0px;
+        width:100px; 
+        height:65px;
+        display: flex;
+        position: relative;
+    }
+    .menu-direita ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex; 
+        gap: 20px;
+        }
+           
+    .menu-direita a {
+        color: white;
+        text-decoration: none; 
+        font-size: 18px;
+        padding: 10px;
+      }
+      a:hover {
+        color: #1e6c3c; 
+    }
+    /*MAIN  */ 
 main {
     padding:20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  }
+
+    .inicio {
+margin:0px;
+height: 600px;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+background: linear-gradient(45deg, #6666d1, #102150, #0f3460);
+background-size:100% 100%;
+animation: gradientAnimation 25s ease infinite; /* Aplica a animação */ /* Garante que o conteúdo não ultrapasse as bordas da seção */
+overflow: hidden;/* Centraliza o conteúdo */
+text-align: center;
 }
 
-.bloco {
-    border:1px;
-    margin: 20px 0;
-    padding: 15px;
-    background: rgb(200, 188, 188);
-}
-.bloco img,p{
-    margin: 10px auto;
-    padding: 10px;
+.bloco-inicio h2{
+    font-size: 80px;
+    color:azure;
+    animation: slideInUp 10s ease-out;
+    text-shadow: 5px 6px 8px rgba(0, 0, 0, 0.7);
+    margin-bottom: 10px;
+   
+} /* animações */
 
+
+button {
+    background-color: rgb(67, 91, 43);
+    color: white;
+    border:none;
+    border-radius:  5px;
+    padding: 10px 15px;
+    cursor:pointer;
+    font-size: 16px;
 }
 
+button:hover{
+    background-color: chartreuse;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+    color: white;
+    font-size:14px;
+}
  

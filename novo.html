@@ -1,0 +1,211 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site</title>
+    <link rel="icon" href="favicon.ico" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="logo.png"/> </div> 
+           
+            <h1> ARTISTAS PREFERIDOS </h1>
+            <nav class="menu-direita">
+                <ul>
+                  <li><a href="index.html">Inicio</a></li>
+                  <li><a href="#descubra">Descubra</a></li>
+                  <li><a href="#sobre">Sobre</a></li>
+                </ul>
+              </nav>
+    </header>
+<style>
+
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte principal */
+    margin: 0; /* Remove margens padrão do navegador */
+    padding: 0; /* Remove preenchimento padrão do navegador */
+    background-color: #1a1a1a; /* Cor de fundo escura */
+    color: #f0f0f0; /* Cor do texto clara */
+    line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+/* Estilos para contêineres de seção */
+.container {
+    max-width: 1200px; /* Largura máxima do conteúdo */
+    margin: 40px auto; /* Centraliza o contêiner horizontalmente com margem superior/inferior */
+    padding: 20px; /* Preenchimento interno */
+    background-color: #2a2a2a; /* Cor de fundo para seções */
+    border-radius: 8px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra suave */
+}
+
+/* Estilos para títulos */
+h1, h2, h3 {
+    text-align: center; /* Centraliza o texto */
+    color: #00bcd4; /* Cor de destaque (azul ciano) */
+    margin-bottom: 20px; /* Margem inferior */
+}
+
+/* Estilos para links */
+a {
+    color: #00bcd4; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+    transition: color 0.3s ease; /* Transição suave na cor */
+}
+
+a:hover {
+    color: #008ba3; /* Cor do link ao passar o mouse */
+}
+
+/* Estilos para botões principais */
+.btn {
+    display: inline-block; /* Permite definir largura e altura */
+    background-color: #00bcd4; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    padding: 10px 20px; /* Preenchimento interno */
+    border-radius: 5px; /* Cantos arredondados */
+    text-transform: uppercase; /* Texto em maiúsculas */
+    font-weight: bold; /* Negrito */
+    transition: background-color 0.3s ease; /* Transição suave na cor de fundo */
+}
+
+.btn:hover {
+    background-color: #008ba3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilos para botões menores */
+.btn-small {
+    padding: 8px 15px; /* Preenchimento menor */
+    font-size: 0.9em; /* Tamanho de fonte menor */
+}
+
+/* --- Estilos do Cabeçalho e Navegação --- */
+header {
+    background-color: #000; /* Cor de fundo preta */
+    padding: 20px 0; /* Preenchimento superior/inferior */
+    position: sticky; /* Fixa o cabeçalho no topo ao rolar */
+    top: 0; /* Posição no topo */
+    z-index: 1000; /* Garante que o cabeçalho fique acima de outros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra */
+}
+
+nav {
+    display: flex; /* Usa flexbox para alinhamento */
+    justify-content: space-between; /* Espaço entre logo e menu */
+    align-items: center; /* Alinha itens verticalmente */
+    max-width: 1200px; /* Largura máxima da navegação */
+    margin: 0 auto; /* Centraliza a navegação */
+    padding: 0 20px; /* Preenchimento lateral */
+}
+
+.logo h1 {
+    margin: 0; /* Remove margem padrão do h1 */
+    color: #f0f0f0; /* Cor do texto do logo */
+    font-size: 1.8em; /* Tamanho da fonte do logo */
+}
+
+nav ul {
+    list-style: none; /* Remove marcadores de lista */
+    margin: 0; /* Remove margem padrão da lista */
+    padding: 0; /* Remove preenchimento padrão da lista */
+    display: flex; /* Usa flexbox para os itens do menu */
+}
+
+nav ul li {
+    margin-left: 25px; /* Espaçamento entre os itens do menu */
+}
+
+nav ul li a {
+    color: #f0f0f0; /* Cor do texto dos links do menu */
+    font-weight: bold; /* Negrito */
+    padding: 5px 0; /* Preenchimento superior/inferior */
+    position: relative; /* Necessário para o efeito de sublinhado */
+}
+
+/* Efeito de sublinhado ao passar o mouse nos links do menu */
+nav ul li a::after {
+    content: ''; /* Conteúdo vazio para o pseudo-elemento */
+    position: absolute; /* Posicionamento absoluto */
+    width: 0; /* Largura inicial zero */
+    height: 2px; /* Altura do sublinhado */
+    background-color: #00bcd4; /* Cor do sublinhado */
+    bottom: 0; /* Alinha na parte inferior */
+    left: 0; /* Alinha à esquerda */
+    transition: width 0.3s ease; /* Transição suave na largura */
+}
+
+nav ul li a:hover::after {
+    width: 100%; /* Largura total ao passar o mouse */
+}
+
+/* --- Estilos da Seção Hero (Home) --- */
+.ini {
+    /* Imagem de fundo, centralizada, cobrindo todo o espaço */
+    background: url('[https://placehold.co/1920x600/000/FFF?text=Background+da+Banda](https://placehold.co/1920x600/000/FFF?text=Background+da+Banda)') no-repeat center center/cover;
+    height: 600px; /* Altura da seção */
+    display: flex; /* Usa flexbox para centralizar conteúdo */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    text-align: center; /* Centraliza texto */
+    color: #fff; /* Cor do texto */
+    position: relative; /* Necessário para o overlay */
+}
+
+/* Overlay escuro sobre a imagem de fundo */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6); /* Cor preta com 60% de opacidade */
+}
+
+.hero-content {
+    position: relative; /* Garante que o conteúdo fique acima do overlay */
+    z-index: 1; /* Garante que o conteúdo fique acima do overlay */
+}
+
+.hero-content h2 {
+    font-size: 3.5em; /* Tamanho da fonte do título */
+    margin-bottom: 15px; /* Margem inferior */
+    color: #fff; /* Cor do título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra no texto */
+}
+
+.hero-content p {
+    font-size: 1.2em; /* Tamanho da fonte do parágrafo */
+    margin-bottom: 30px; /* Margem inferior */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Sombra no texto */
+}
+
+    </style>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                           
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="inicio">
+            <div class="bloco-inicio">
+                <h2>Onde o som encontra a alma!</h2> 
+                <p>Descubra músicas, shows e novidades.</p>
+                <a href="#music" class="btn">Ouça Agora</a> </div>
+        </section>
+
+        </main>
+
+      
+      
+</body>
+</html>
+
+
